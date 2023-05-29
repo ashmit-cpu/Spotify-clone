@@ -1,41 +1,212 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
-  body {
-    background-color: #121212;
-    font-family: 'Montserrat', sans-serif;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  .side-bar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 196px;
-    background-color: #000000;
-    padding: 24px;
-  }
+body {
+  background-color: #181818;
+  font-family: 'Montserrat', sans-serif;
+}
 
-  .side-bar .logo img{
-    width: 130px;
-  }
+.side-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 245px;
+  background-color: #000000;
+  padding: 24px;
+}
 
-  .side-bar .navigation ul{
-    list-style: none;
-    margin-top: 20px;
-  }
-  .side-bar .navigation ul li{
-    padding: 10px 0;
-  }
-  .side-bar .navigation ul li a{
-    color: #b3b3b3;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-  }
+/* netflix logo */
+.side-bar .logo img {
+  width: 130px;
+}
 
-  .side-bar .navigation ul li .sidebar-logos{
-    font-size: 20px;
-    padding-right: 10px;
-  }
+/* sidebar links */
+.side-bar .navigation ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.side-bar .navigation ul li {
+  padding: 10px 0;
+}
+
+.side-bar .navigation ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.side-bar .navigation ul li .sidebar-logos {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+
+.side-bar .policies {
+  position: absolute;
+  bottom: 120px;
+}
+
+.side-bar .policies ul li a {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.side-bar .policies ul li {
+  padding-bottom: 20px;
+}
+
+
+.side-bar .navigation ul li a:hover,
+.side-bar .navigation ul li a:focus,
+.side-bar .policies ul li a:hover,
+.side-bar .policies ul li a:focus {
+  color: #ffffff;
+  transition: all 0.3s ease-in;
+}
+
+.main-container {
+  margin-left: 245px;
+  margin-top: 80px;
+
+}
+
+
+.top-navbar {
+  display: flex;
+  background-color: #000000;
+  justify-content: space-between;
+  padding: 8px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 245px;
+  align-items: center;
+  margin-bottom: 50px;
+
+}
+
+.top-navbar .prev-next-buttons button {
+  background-color: #000000;
+  color: #7a7a7a;
+  border: none;
+  width: 34px;
+  height: 34px;
+  font-size: 18px;
+  cursor: not-allowed;
+}
+
+.top-navbar .login-buttons {
+  margin-right: 30px;
+}
+
+.top-navbar .login-buttons a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* giving hover effect for sign up button */
+.top-navbar .login-buttons a:hover {
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+  transform: scale(1.03);
+
+}
+
+.top-navbar .login-buttons button {
+  background-color: white;
+  color: black;
+  padding: 14px 30px;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+
+}
+
+.top-navbar .login-buttons button:hover {
+  transform: scale(1.04);
+  background-color: #dfdfdf;
+  transition: all 0.1s ease-in;
+
+}
+
+.spotify-playlists {
+  padding: 20px 40px;
+
+}
+
+.spotify-playlists .container {
+  display: flex;
+  gap: 20px;
+}
+
+.spotify-playlists .container .item {
+  min-width: 170px;
+  width: 210px;
+  padding: 17px;
+  background-color: #141414;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+
+.spotify-playlists .container .item:hover {
+  background-color: #272727;
+
+}
+
+.spotify-playlists .container .item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.spotify-playlists .container .item .play {
+  position: relative;
+
+}
+
+.spotify-playlists .container .item .play span {
+  position: absolute;
+  right: 8px;
+  top: -50px;
+  padding: 14px 17px 14px 19px;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease .4s;
+}
+
+.spotify-playlists .container .item:hover .play span {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.spotify-playlists .container .item h4 {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.spotify-playlists .container .item p {
+  color: #989898;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  text-overflow: "...";
+
+
+}
