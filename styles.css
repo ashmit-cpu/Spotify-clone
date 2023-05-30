@@ -50,14 +50,16 @@ body {
 
 .side-bar .policies {
   position: absolute;
-  bottom: 120px;
+  bottom: 130px;
+  
 }
 
 .side-bar .policies ul li a {
   text-decoration: none;
   color: #b3b3b3;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
+  overflow-y: clip;
 }
 
 .side-bar .policies ul li {
@@ -70,7 +72,48 @@ body {
 .side-bar .policies ul li a:hover,
 .side-bar .policies ul li a:focus {
   color: #ffffff;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.side-bar .policies ul li {
+  justify-content: space-between;
+  display: flex;
+}
+
+.side-bar .policies ul li a{
+  padding-right: 24px;
+}
+
+/* english button styling */
+
+.side-bar .english-btn{
+  position: absolute;
+  bottom: 100px;
+
+}
+.side-bar .english-btn button{
+  background-color: transparent;
+  border: 1px solid rgb(116, 116, 116);
+  border-radius: 20px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  padding: 7px 14px 7px 12px;
+}
+.side-bar .english-btn button:hover{
+  transform: scale(1.05);
+  transition: all 0.1s;
+  border: 1px solid rgb(255, 255, 255);
+
+
+}
+.side-bar .english-btn button:hover span{
+  color: rgb(248, 248, 248);
+}
+
+.side-bar .english-btn span{
+  color: #cccccc;
+  margin-right: 3px;
 }
 
 
@@ -314,6 +357,8 @@ body {
   border-radius: 40px;
   border: none;
   margin-right: 15px;
+  outline: none;
+
 
 }
 
@@ -326,7 +371,7 @@ body {
 
 .footer {
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .top-footer {
@@ -396,3 +441,20 @@ body {
   background-color: #4b4b4b;
   transition: all .1s ease-in;
 }
+
+.footer .copyrights hr{
+  border: 0;
+  height: 1px;
+  background-color: #4b4b4b;
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  }
+
+  .footer .copyrights p{
+    color: rgb(167, 167, 167);
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 400;
+  }
