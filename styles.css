@@ -2,13 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
+
 }
 
 body {
   overflow: overlay;
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: transparent transparent; /* For Chrome, Edge, and Safari */
+  scrollbar-width: thin;
+  /* For Firefox */
+  scrollbar-color: transparent transparent;
+  /* For Chrome, Edge, and Safari */
 }
 
 /* For Chrome, Edge, and Safari */
@@ -23,7 +25,7 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-track {
   background: rgb(19, 19, 19);
- 
+
 }
 
 
@@ -76,7 +78,7 @@ body {
 .side-bar .policies {
   position: absolute;
   bottom: 130px;
-  
+
 }
 
 .side-bar .policies ul li a {
@@ -105,18 +107,19 @@ body {
   display: flex;
 }
 
-.side-bar .policies ul li a{
+.side-bar .policies ul li a {
   padding-right: 24px;
 }
 
 /* english button styling */
 
-.side-bar .english-btn{
+.side-bar .english-btn {
   position: absolute;
   bottom: 100px;
 
 }
-.side-bar .english-btn button{
+
+.side-bar .english-btn button {
   background-color: transparent;
   border: 1px solid rgb(116, 116, 116);
   border-radius: 20px;
@@ -125,18 +128,20 @@ body {
   font-weight: 700;
   padding: 7px 14px 7px 12px;
 }
-.side-bar .english-btn button:hover{
+
+.side-bar .english-btn button:hover {
   transform: scale(1.05);
   transition: all 0.1s;
   border: 1px solid rgb(255, 255, 255);
 
 
 }
-.side-bar .english-btn button:hover span{
+
+.side-bar .english-btn button:hover span {
   color: rgb(248, 248, 248);
 }
 
-.side-bar .english-btn span{
+.side-bar .english-btn span {
   color: #cccccc;
   margin-right: 3px;
 }
@@ -281,7 +286,9 @@ body {
 
 .spotify-playlists .container .item:hover {
   background-color: #272727;
-
+  -webkit-box-shadow: 9px 0px 18px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 0px 18px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 0px 18px -12px rgba(0, 0, 0, 0.75);
 }
 
 .spotify-playlists .container .item img {
@@ -460,25 +467,25 @@ body {
   margin-right: 10px;
 }
 
-.footer .top-footer .social-media button:hover{
+.footer .top-footer .social-media button:hover {
   cursor: pointer;
   background-color: #4b4b4b;
   transition: all .1s ease-in;
 }
 
-.footer .copyrights hr{
+.footer .copyrights hr {
   border: 0;
   height: 1px;
   background-color: #4b4b4b;
   display: flex;
   width: 95%;
   margin: 0 auto;
-  }
+}
 
-  .footer .copyrights p{
-    color: rgb(167, 167, 167);
-    margin-left: 30px;
-    margin-top: 40px;
-    font-size: 14px;
-    font-weight: 400;
-  }
+.footer .copyrights p {
+  color: rgb(167, 167, 167);
+  margin-left: 30px;
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 400;
+}
