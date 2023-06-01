@@ -5,6 +5,8 @@
 
 }
 
+
+
 body {
   overflow: overlay;
   scrollbar-width: thin;
@@ -31,11 +33,17 @@ body::-webkit-scrollbar-track {
 
 
 
+
 body {
   background: rgb(40, 40, 40);
   background: linear-gradient(180deg, rgba(40, 40, 40, 1) 17%, rgba(19, 19, 19, 1) 30%);
   font-family: 'Montserrat', sans-serif;
 }
+
+
+
+/* .side-bar styling */
+
 
 .side-bar {
   position: fixed;
@@ -148,9 +156,23 @@ body {
 
 
 
+
+/* .main-container styling */
+
 .main-container {
   margin-left: 245px;
   margin-top: 80px;
+
+}
+
+
+
+/* mobile menu window */
+
+.menu-window {
+  transform: translateX(200%);
+  opacity: 0;
+  position: fixed;
 
 }
 
@@ -175,6 +197,24 @@ body {
 
 
 }
+
+.top-navbar .logo {
+  display: none;
+}
+
+.top-navbar #openMenu {
+  display: none;
+}
+
+.top-navbar .open-btn{
+  display: none;
+}
+
+.top-navbar .menu-btn.search-bar{
+  display: none;
+}
+
+
 
 .top-navbar .prev-next-buttons button {
   background-color: #000000;
@@ -422,8 +462,6 @@ body {
   padding: 10px;
   padding-right: 90px;
 
-
-
 }
 
 .footer .links ul li a {
@@ -488,4 +526,318 @@ body {
   margin-top: 40px;
   font-size: 14px;
   font-weight: 400;
+}
+
+.footer .copyrights .policies {
+  display: none;
+}
+
+.footer .copyrights .english-btn {
+  display: none;
+}
+
+@media all and (max-width:576px) {
+  body {
+    background: rgb(13, 13, 13);
+
+  }
+
+  .side-bar {
+    display: none;
+  }
+
+  .main-container {
+    margin-left: 0;
+    margin-top: 80px;
+
+  }
+
+
+  #closeMenu {
+    position: fixed;
+    color: white;
+    font-size: 20px;
+    float: right;
+    right: 16px;
+    top: 16px;
+  }
+
+  .top-navbar {
+    left: 0;
+  }
+
+  .top-navbar .logo {
+    display: block;
+  }
+
+  .top-navbar .logo img {
+    width: 100px;
+  }
+
+  .top-navbar .prev-next-buttons {
+    display: none;
+
+
+  }
+
+  .top-navbar .login-buttons .signin-btn {
+
+    display: none;
+  }
+
+  .top-navbar .login-buttons .login-btn {
+    display: none;
+  }
+
+  .main-container .preview {
+    display: none;
+  }
+
+  .top-navbar #openMenu {
+    display: block;
+    color: white;
+    margin-right: 10px;
+  }
+
+  .menu-window {
+    padding: 50px 0 0 30px;
+  }
+
+
+
+  .menu-window.active {
+    transform: translateX(0%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 199;
+    transition: 0.7s all ease-in;
+    opacity: 1;
+  }
+
+
+  .menu-window ul .top-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+
+  }
+
+  .menu-window .top-links li,
+  .menu-window .top-links hr {
+    margin-bottom: 20px;
+  }
+
+
+
+  .menu-window ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+
+  }
+
+  .menu-window hr {
+    width: 20px;
+    margin-left: 12px;
+  }
+
+
+  .menu-window ul li {
+    padding: 8px;
+    padding-left: 10px;
+
+  }
+
+
+  /* .spotify-playlists styling */
+  .spotify-playlists {
+    padding: 20px 10px;
+
+  }
+
+  .spotify-playlists .container {
+    gap: 5px;
+  }
+
+  .spotify-playlists .container .item {
+    min-width: 150px;
+    padding: 12px;
+    background-color: #111111;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    height: 190px;
+  }
+
+  .spotify-playlists .container .item p {
+    display: none;
+
+
+  }
+
+  .spotify-playlists .playlist-header a {
+    display: none;
+  }
+
+  .spotify-playlists .playlist-header h1 {
+    font-size: 16px;
+    margin-left: 3px;
+  }
+
+
+  /* footer links styling */
+  .footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .top-footer {
+    flex-direction: column;
+    padding: 12px;
+
+  }
+
+  .footer .links ul li {
+    list-style: none;
+    padding: 5px;
+    padding-right: 90px;
+
+  }
+
+  .footer .links ul {
+    padding-bottom: 15px;
+  }
+
+
+  .footer .links ul li a {
+    font-size: 14px;
+
+  }
+
+  .footer .links ul h4 {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25.6px;
+  }
+
+  .footer .links {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .footer .top-footer .social-media {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer .top-footer .social-media button span {
+    font-size: 14px;
+
+
+
+  }
+
+  .footer .top-footer .social-media button {
+    padding: 8px 10px;
+
+  }
+
+  .footer .copyrights hr {
+    background-color: #272727;
+
+  }
+  .footer .copyrights p {
+    color: rgb(167, 167, 167);
+    margin-left: 13px;
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .footer .copyrights .policies {
+    display: block;
+    padding: 12px;
+    min-width: 100px;
+  }
+
+  .footer .copyrights .english-btn {
+    display: block;
+
+  }
+
+  .footer .copyrights .policies ul li {
+    padding: 2px;
+
+  }
+
+  .footer .copyrights .policies ul li a {
+    padding-right: 24px;
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 11px;
+    font-weight: 500;
+    overflow-y: clip;
+  }
+
+  .footer .copyrights .english-btn button {
+    background-color: transparent;
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 20px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding: 7px 14px 7px 12px;
+    margin-top: 10px;
+    margin-left: 12px;
+  }
+
+  .footer .copyrights .english-btn button:hover {
+    transform: scale(1.03);
+    transition: all 0.1s;
+    border: 1px solid rgb(255, 255, 255);
+  
+  
+  }
+
+  /* open button styling  */
+
+  .top-navbar .open-btn{
+    display: block;
+  }
+
+ 
+
+  .top-navbar .open-btn button {
+    background-color: white;
+    color: black;
+    padding: 7px 20px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+  
+  }
+
+  .top-navbar .open-btn button:hover {
+    transform: scale(1.01);
+    background-color: #dfdfdf;
+    transition: all 0.1s ease-in;
+  
+  }
+  .top-navbar .menu-btn.search-bar{
+    display: block;
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+  }
+
 }
