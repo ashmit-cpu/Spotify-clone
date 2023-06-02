@@ -12,6 +12,6 @@ toggleLogo.addEventListener('click',function(){
 
 closeToggle.addEventListener('click',function(){
     menu.classList.remove('active');
-    body.style.overflow='overlay';
+    body.style.overflow='auto';
 
 })
