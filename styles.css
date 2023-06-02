@@ -574,6 +574,10 @@ body {
     float: right;
     right: 16px;
     top: 16px;
+
+  }
+  #closeMenu:hover{
+    cursor: pointer;
   }
 
   .top-navbar {
@@ -611,6 +615,9 @@ body {
     display: block;
     color: white;
     margin-right: 10px;
+  }
+  .top-navbar #openMenu:hover{
+    cursor: pointer;
   }
 
   .menu-window {
@@ -815,6 +822,7 @@ body {
   }
 
   .footer .copyrights .english-btn button:hover {
+    cursor: pointer;
     transform: scale(1.03);
     transition: all 0.1s;
     border: 1px solid rgb(255, 255, 255);
@@ -826,6 +834,9 @@ body {
 
   .top-navbar .open-btn {
     display: block;
+  }
+  .top-navbar .open-btn:hover{
+    cursor: pointer;
   }
 
 
