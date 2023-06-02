@@ -272,6 +272,9 @@ body {
 
 }
 
+
+/* .spotify-playlists styling */
+
 .spotify-playlists {
   padding: 20px 20px;
   padding-right: 20px;
@@ -446,6 +449,9 @@ body {
   transition: all 0.1s ease-in;
 }
 
+
+/* footer styling */
+
 .footer {
   margin-top: 40px;
   margin-bottom: 150px;
@@ -542,6 +548,8 @@ body {
   display: none;
 }
 
+/* Responsive Mobile design */
+
 @media all and (max-width:576px) {
   body {
     background: rgb(20, 20, 20);
@@ -619,7 +627,7 @@ body {
     height: 100%;
     background-color: #000000;
     z-index: 199;
-    transition: 0.7s all ease-in;
+    transition: 0.7s all ease-out;
     opacity: 1;
   }
 
