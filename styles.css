@@ -549,6 +549,39 @@ body {
 }
 
 /* Responsive Mobile design */
+@media all and (max-height:648px){
+  .side-bar{
+    padding-bottom: 80px;
+    overflow-y: scroll;
+  }
+  .side-bar::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  .side-bar::-webkit-scrollbar-thumb {
+    background-color: #00000000;
+    border-radius: 3px;
+  }
+  
+  .side-bar::-webkit-scrollbar-track {
+    background: rgb(19, 19, 19);
+  
+  }
+  
+.side-bar .policies {
+  position: static;
+  bottom: none;
+  margin-top:30px ;
+
+}
+
+.side-bar .english-btn {
+  position: static;
+  bottom: none;
+  margin-top: 10px;
+
+}
+}
 
 @media all and (max-width:576px) {
   body {
